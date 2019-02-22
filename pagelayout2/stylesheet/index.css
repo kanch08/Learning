@@ -1,0 +1,279 @@
+
+body{
+    margin: 0px;
+}
+header .container #logo{
+    float: left;
+    margin: 0px 10px 10px 10px;
+}
+header .container div i{
+    float: left;
+}
+header .container .contact{
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+header .container > div{
+    float: right;
+    margin-top: 5px;
+}
+header .container .contact i{
+    float: left;
+    margin-top: 10px;
+    color: #5ac32f;
+    font-size: 1.4em;
+}
+header .container .contact div{
+    float: right;
+    position: relative;
+    margin-left: 15px; 
+}
+header .container .contact div > p{
+    line-height: 20px;  
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+    font-size: 0.9em;
+}
+header .container button{
+    border: thin solid #5ac32f;
+    padding: 15px 30px 15px 30px;
+    background: none;
+    float: right;
+    margin-top: -2px;
+    margin-left: 50px;
+}
+
+
+#header_con_detail{
+    width: 100%;
+    margin: auto;
+    height: 30px;
+    background-color: #f2f2f2;
+}
+#header_con_detail .container{
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
+#header_con_detail .container ul{
+    margin-top: 0px;
+    float: left;
+}
+#header_con_detail .container .social{
+    float: right;  
+}
+#header_con_detail .container .social i{
+    color: #5ac32f;
+}
+#header_con_detail .container .social ul li{
+    border:none;
+    padding: 5px;
+}
+#header_con_detail .container ul li{
+    display:inline-block;
+    list-style: none; 
+    padding: 5px 14px 5px 10px;
+    border-right: thin solid #ccc;
+    margin-top: 0px;
+}
+#header_con_detail .container ul li:last-child{
+    border: none;
+}
+#header_con_detail .container ul li a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.9em;
+    color: #999;
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    margin:auto;
+    margin-top: 15px;
+}
+#menu{
+    background-color: #5ac32f;
+    height: 40px;
+    clear: both;
+}
+#menu .container{
+    width: 80%;
+}
+#menu ul{
+    position: relative;
+    top: 1px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+#menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+#menu ul li i:active{
+    padding-left: 5px;
+}
+#menu ul li a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 15px 9px 15px;
+}
+#menu ul li a:hover{
+    background-color: #fff;
+    color:#5ac32f;
+    transition:all linear 0.2s;
+}
+#caraousel{
+    width: 100%;
+    height: 500px;
+    background-image: url('../asset/caraousel5.jpg');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+#caraousel #dark{
+    background-color: #000;
+    position: absolute;
+    z-index:1;
+    opacity: 0.3;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+
+}
+#caraousel #caraousel_content{
+    position: absolute;
+    z-index: 2;
+    width:500px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 44%;
+}
+#caraousel #caraousel_content h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.7em;
+    color: #fff;
+    text-transform: capitalize;
+}
+#caraousel #caraousel_content p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #fff;
+    line-height: 28px;
+}
+#caraousel #caraousel_content button{
+    padding: 15px 40px 15px 40px;
+    background:none;
+    border: thin solid #5ac32f;
+    color: #fff;
+    margin:20px;
+    cursor: pointer;
+}
+#caraousel #caraousel_content button:hover{
+    background-color: #fff;
+    color: #5ac32f;
+    transition: all linear 0.2s;
+}
+#about_content{
+    width:100%;
+    height: auto;
+    position: relative;
+}
+#about_content .container {
+    margin: -60px auto;
+    position: relative;
+    z-index: 6;
+    text-align: center;
+}
+#about_content .container .abt_cnt{
+    width: 25%;
+    /*display: inline-block;*/
+    float: left;
+    background-color:#999;
+    height: 300px;
+}
+#about_content .container  .abt_cnt div > div img{
+    width: 70px;
+    margin-top: 20px;
+}
+#about_content .container .abt_cnt h2{
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:1.1em;
+}
+#about_content .container .abt_cnt p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9em;
+    color: #fff;
+    line-height: 20px;
+}
+#about_content .container .abt_cnt div{
+    width: 80%;
+    margin: 20px auto;
+}
+#about_content .container .abt_cnt div > div{
+    width: 80%;
+    height: 80px;
+    margin: auto;
+}
+#about_content #cnt1{
+    background-color: #5862ff;
+}
+#about_content #cnt2{
+    background-color:#ff5765;
+}
+#about_content #cnt3{
+    background-color:#a5e268;
+}
+#about_content #cnt4{
+    background-color: #ff7836;
+}
+::-webkit-scrollbar{
+    background-color: #5ac32f;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+}
+
+@media only screen and (max-width:1100px){
+    #header_con_detail .container{
+        width: 100%;
+    }
+    header .container{
+        width: 90%;
+    }
+    #menu .container{
+        width: 100%;
+    }
+    #menu ul li a{
+        padding: 10px 5px 5px 10px;
+    }
+    #about_content .container .abt_cnt > div > div{
+        width: 100%;
+        height: 50px;
+    }
+    #about_content .container .abt_cnt > div{
+        width: 95%;
+    }
+}
+@media only screen and (max-width:700px){
+    
+}
+
+
