@@ -1,0 +1,209 @@
+body{
+    margin: 0px;
+}
+.head{
+    width: 70%;
+    margin: auto;
+}
+header{
+    width:100%;
+    margin: auto;
+    height: 150px;
+    border-bottom:thin solid #ccc;
+}
+header #logo{
+    width: 20%;
+    float: left;
+    margin: 20px;
+}
+header #new{
+    width: 50%;
+    float: right;
+    margin: 40px;
+}
+.buzz{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
+    border: thin solid #ccc;
+    width: 210px;
+    padding: 10px;
+    margin: 40px auto;
+}
+#con h2,.head h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+#con p,.head p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9em;
+    color: #000;
+    text-align: justify;
+    line-height: 20px;
+}
+#gallery{
+    positive:relative;
+    height: auto;
+}
+#gallery .gal_con{
+    width: 48%;
+    float:left;
+    margin: 1%;
+}
+#gallery .gal_con h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    color: #000;
+    text-align: justify;
+    line-height: 20px;
+}
+#gallery .gal_con p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9em;
+    color: #000;
+    text-align: justify;
+    line-height: 20px;
+}
+.hiring_new{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    clear: both;
+}
+#hiring_new{
+    background-color: #f3f2f3;
+}
+#hiring_new img{
+    width: 30%;
+    float: left;
+    margin: 20px;
+}
+#hiring_new img:last-child{
+    margin-left:100px;
+}
+#new_con .gal_con{
+    float: left;
+    margin: 10px;
+    width:47%;
+    height: auto;
+}
+#new_con{
+    background-color: none;
+}
+#new_con .gal_con h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+}
+#new_con .gal_con a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9em;
+    color: red;
+    text-decoration: none;
+}
+.buzz{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
+    border: thin solid #ccc;
+    width: 210px;
+    padding: 10px;
+    margin: 40px auto;
+    text-transform:capitalize;
+}
+.blog{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
+    border: thin solid #ccc;
+    width: 260px;
+    padding: 10px;
+    margin: 40px auto;
+    text-transform:capitalize;
+}
+#new_client{
+    width: 100%;
+    height: 200px;
+    background-image: url("../image/background.jpg");
+    background-repeat: repeat-y;
+    background-position: center;
+    position: relative;
+    top: 30px;
+}
+footer{
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+footer .foot_con{
+    width: 400px;
+    margin:50px auto;
+    text-align: center;
+}
+footer .foot_con h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+}
+footer .foot_con p{
+    line-height: 5px;
+}
+footer .foot_con #social img{
+    width: 50px;
+}
+::selection{
+    background-color: #000;
+    color: #fff;
+}
+::-webkit-scrollbar{
+    background-color: black;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+}
+@media only screen and (max-width:700px){
+    header{
+        height: 100px;
+    }
+    header .head{
+        width: 100%;
+    }
+    #new_con{
+ 
+        margin: auto;
+        width:80%;
+        height: auto;
+       
+    }
+    #new_con .gal_con{
+        width: 100%;
+        margin: auto;
+    }
+    #new_con .gal_con p,h2{
+        text-align: center;
+    }
+    .head{
+        width:90%;
+    }
+}
+@media only screen and (max-width:700px){
+    #gallery .gal_con{
+        float: none;
+        width: 100%;
+    }
+  #hiring_new .gal_con{
+      clear: both;
+      width: 100%;
+      margin: auto;
+  }
+  #hiring_new{
+      height: 250px;
+  }
+  #hiring_new .head{
+      width:100%;
+      
+  }
+  #hiring_new .gal_con img{
+      width: 50%;
+      position: relative;
+      left: 0px;
+  }
+}
