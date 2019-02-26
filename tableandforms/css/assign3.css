@@ -1,0 +1,87 @@
+body{
+    margin: 0px;
+    background-color: #f2f2f2;
+}
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    color: red;
+    text-shadow: 2px 2px 7px #999;
+    margin-top: 50px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.clearfix{
+    content: '';
+    clear: both;
+}
+.container{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+#s1 img{
+    float: left;
+    margin:0px 10px;
+}
+#s1 p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    text-align: justify;
+    margin: 10px;
+}
+
+#tab{
+    position: relative;
+    top: 50px;
+}
+#tab #con{
+    float: left;
+    width: 40%;
+    height: auto;
+    position: relative;
+    top: 0px;
+}
+#tab #con p{
+    text-align: justify;
+
+}
+#table_format{
+    width: 58%;
+    float: right;
+}
+table{
+    width: 600px;
+    height: auto;
+    background-image: url('../assets/back.jpg');
+    border: thin solid #ccc;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-box-shadow: 0px 0px 24px 2px rgba(166,159,166,1);
+    -moz-box-shadow: 0px 0px 24px 2px rgba(166,159,166,1);
+    box-shadow: 0px 0px 24px 2px rgba(166,159,166,1);
+    
+}
+table caption{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    color: red;
+    text-shadow: 2px 2px 7px #999;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+table tr th{
+    font-size: 1.1em;
+    color: yellow;
+    border: thin solid #ccc;
+}
+table tr td{
+    padding: 5px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #fff;
+    border: thin solid #ccc;
+}
