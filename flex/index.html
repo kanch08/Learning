@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+	<title>FlexSlider 2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <!-- Demo CSS -->
+  <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/index.css">
+
+
+
+</head>
+<body class="loading">
+    <header>
+        <div id="menu" class="container">
+                <div id="logo">
+                    <img src="images/logo.jpg" width="200px" alt="logo" title="logo">
+                    <span>Eng</span>
+                </div>
+                
+                
+                <nav id="menu">
+
+                    <ul class="menu">
+                        <li><a href="javascript:void(0)"><i class="fas fa-home"></i></a></li>
+                        <li><a id="aboutUs" href="javascript:void(0)">About us</a>
+                            ￼     <ul class="sub-menu" id="sb1">
+                                  <li><a href="javascript:void(0)">About the company</a></li>
+                                  <li><a href="javascript:void(0)">Services</a></li>
+                                  <li><a class="sb1" href="javascript:void(0)">History</a>
+                                    <div class="arrow-right"></div>
+                                    <ul id="sb_menu" class="sub-menu">
+                                        <li><a href="javascript:void(0)">Submenu 1</a></li>
+                                        <li><a href="javascript:void(0)">Submenu 1</a></li>
+                                        <li><a href="javascript:void(0)">Submenu 1</a></li>
+                                        <li><a href="javascript:void(0)">Submenu 1</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0)">Infrastructure</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)">Ecosystems</a></li>
+                        <li><a href="javascript:void(0)">Resources</a></li>
+                        <li><a href="javascript:void(0)">Contact us</a>
+                        </li>
+                        <li><img src="images/user.png"></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+	<div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="images/s1.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/s2.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/s1.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/s2.jpg" />
+  	    		</li>
+          </ul>
+        </div>
+      </section>
+   </div>
+
+   <div class="clearfix"></div>
+
+   <section id="sec_play">  
+     <div id="play" class="container">
+       <h1>Featured Videos</h1>
+       <section id="view">
+          <div id="left_con">
+            <img src="images/im.png" width="100%" alt="Play">
+            <div id="title">
+              <div>
+                <h2>Juhee Ahmed</h2>
+                <p>CEO, Fab CI</p>
+              </div>
+              <div id="play">
+                  <div class="arrow-right"></div>
+              </div>
+          
+            </div>
+          </div>
+          <!--left_con-->
+          <div id="right_con">
+            <div class="con">
+              <img src="images/im.png" width="140px">
+              <div>
+              <h2>Dr. Mudita Khandelwal</h2>
+              <p>Assistant Professor,IIT</p>
+              </div>
+              <!--div-->
+            </div>
+            <!--con-->
+            <div class="con">
+                <img src="images/im.png" width="140px">
+                <div>
+                <h2>Juhiee Ahmed</h2>
+                <p>CEO, Fab CI</p>
+                </div>
+                <!--div-->
+              </div>
+              <!--con-->
+              <div class="con">
+                  <img src="images/im.png" width="140px">
+                  <div>
+                  <h2>Irshan Khatter</h2>
+                  <p>M.D, fabIndia, Bangalore</p>
+                  </div>
+                  <!--div-->
+                </div>
+                <!--con-->
+              
+          </div>
+          <!--right_con-->
+       </section>
+       <!--view-->
+     </div>
+   </section>
+ 
+ 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  
+<script type="text/javascript" src="js/index.js"></script>
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+
+</body>
+</html>
