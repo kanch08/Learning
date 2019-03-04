@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+}
+
+footer{
+    width: 500px;
+    margin: auto;
+    height: 500px;
+    background-color: #ccc;
+}
+footer span{
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    margin: 12px;
+    
+}
+footer #facebook{
+    background-image: url('../assets/sprite.png');
+    background-position: -30px -20px;
+    background-repeat: no-repeat;
+}
+footer #youtube{
+    background-image: url('../assets/sprite.png');
+    background-position: -230px -20px;
+    background-repeat: no-repeat;
+}
+footer #google{
+    background-image: url('../assets/sprite.png');
+    background-position: -430px -20px;
+    background-repeat: no-repeat;
+}

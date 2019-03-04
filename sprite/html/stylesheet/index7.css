@@ -1,0 +1,21 @@
+body{
+    margin: 0px;
+}
+
+.container .transition{
+    width: 200px;
+    height: 200px;
+    background-color: #ff0000;
+    margin: 30px auto;
+    border: 1px solid #000;
+    transition: 3s;
+    cursor: pointer;
+}
+
+.container .transition:active{
+    height: 200px;
+    width: 100px;
+    background-color: #ffff00   ;
+    border: 2px solid #ff0000;
+    transform: scaleX(2) scaleY(3);
+}
