@@ -1,0 +1,288 @@
+body{
+    margin: 0px;
+}
+.clearfix{
+    content: '';
+    clear: both;
+    display: table;
+}
+#top{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-image: url('../asset/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+#top #dark{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.7;
+}
+#top header{
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    border-bottom: thin solid #fff;
+}
+#menu{
+    position: absolute;
+    right:20px;
+    top: 30px;
+    display: block;
+}
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+#top header ul{
+    float: right;
+    display: none;
+}
+#top header span{
+    font-family: a;
+    font-size: 0.9em;
+    color: #fff;
+    position: relative;
+    top: 40px;
+    font-weight: bold;
+}
+#top header ul{
+    position: relative;
+    top: 10px;
+}
+#top header ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px;
+}
+#top header ul li:last-child{
+    margin: 0px;
+    padding: 0px;
+}
+#top header ul li a{
+    font-family: a;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration:none;
+    padding: 5px;  
+    opacity: 0.9; 
+}
+#top header ul li a:hover{
+    border-bottom:thin solid #fff;
+    transition:all linear 0.1s;
+    opacity: 1;
+    color: yellow;
+}
+#top #container{
+    position: relative;
+    z-index: 1;
+}
+#top #container h1{
+    font-family: c;
+    font-size:1.2em;
+    line-height: 30px;
+    color: #fff;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+ }
+ #top #container .row{
+     width: 90%;
+     margin: auto;
+     height: auto;
+ }
+ #top #container .row .col-lg-2{
+     width: 100%;
+     text-align: center;
+     color: #fff;
+     box-sizing: border-box;
+     text-transform: capitalize;
+     font-weight: 600;
+     font-family: a;
+     margin-top:30px;
+
+ }
+ 
+.start{
+     padding: 13px 60px 13px 60px;
+     border-radius: 20px;
+     background-color: transparent;
+     border: 4px solid greenyellow;
+     color: greenyellow;
+     font-size: 1.2em;
+     font-weight: 600;
+     position: relative;
+     top: 120px;
+     cursor: pointer;
+ }
+.start:hover{
+     background-color: greenyellow;
+     color: #000;
+     transition: all linear 0.2s;
+ }
+ 
+ #top #container .row .col-lg-2 i{
+     font-size: 2.6em;
+     color: greenyellow;
+ }
+
+ .nav2{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+.nav2 .col{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+.nav2 .col img{
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+}
+
+.nav2 .col h2{
+   font-size: 1.2em;
+   text-align: center;
+   margin:20px 10px 15px 10px;
+   font-family: i;
+   line-height: 30px;
+}
+.nav2 .col p{
+    font-family: a;
+    font-size: 16px;
+    text-align: center;
+    margin:10px;
+}
+.nav2 .col .start{
+    top: 30px;
+    border: green 3px solid;
+    color: green;
+    
+}
+#form_con{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: yellowgreen;
+    font-size: 0;
+    padding-bottom: 50px;
+    
+}
+
+#form_con .nav2 h2{
+    font-family: a;
+    font-size: 22px;
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#form_con .nav2 div{
+    width: 100%;
+}
+#form_con .nav2 label{
+    font-size: 15px;
+    display: block;
+    font-family: a;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#form_con .nav2 div input::placeholder{
+    color: #fff;
+    padding: 10px;
+    opacity: 0.8;
+}
+#form_con .nav2 div input[type="text"]:focus{
+    border: thin solid #fff;
+    transition: all linear #fff;
+}
+#form_con .nav2 div input[type="text"]{
+    width: 100%;
+    height: 30px;
+    border:2px solid greenyellow;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: #fff;
+    font-family: a;
+    font-weight: 600;
+}
+#form_con .nav2 textarea{
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    border:2px solid greenyellow;
+    border-radius: 5px;
+}
+#form_con .nav2 #sbt{
+     padding: 13px 60px 13px 60px;
+     border-radius: 20px;
+     background-color: transparent;
+     border: 3px solid greenyellow;
+     color: white;
+     font-size: 16px;
+     font-weight: 600;
+     position: relative;
+     top: 10px;
+     cursor: pointer;
+}
+
+@media only screen and (min-width:768px){
+    #top #container .row .col-lg-2{
+        width: 32.5%;
+        display: inline-block;   
+    }
+}
+@media only screen and (min-width:1000px){
+    .nav2{
+        width: 90%;
+    }
+    #menu{
+        display: none;
+    }
+    #top header ul{
+        display: block;
+    }
+    #top #container{
+        padding-bottom: 150px;
+    }
+    #top #container h1{
+        font-family: c;
+        font-size:2.2em;
+     }
+    .nav2 .col{
+        width: 50%;
+        height: auto;
+        padding-bottom: 50px;
+        float: left;
+    }
+    .nav2 .col p{
+        margin:20px;
+    }
+    #form_con .nav2 div{
+        width: 50%;
+        display: inline-block;
+    }
+    #form_con .nav2 div input[type="text"]{
+        width: 95%;
+    }
+    #form_con .nav2 textarea{
+        width: 97%;
+    }
+}
