@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javascript Clock</title>
+    <script type="text/javascript" src="index.js"></script>
+    <style>
+        body{
+            background-color:#2196f3;
+        }
+        *{
+            font-family: sans-serif;
+            font-size:2em;
+            color: #fff;
+            text-align: center;
+        }
+        h1{
+            font-size:0.9em;
+        }
+        #wish::after{
+            content:'';
+            width: 150px;
+            height: 10px;
+            background-color: #fff;
+            margin: auto;
+            position:absolute;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            top: 22%;
+        }
+        #clock{
+            
+            margin-top: 50px;
+        }
+        p{
+            font-size: 0.4em;
+        }
+    </style>
+</head>
+<body onload="showTime();">
+    <h1 id="wish"></h1>
+    <div id="clock">
+    </div>
+    <p id="dte"></p>
+</body>
+</html>
