@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+div{
+    width: 500px;
+    margin: auto;
+    position: relative;
+    top: 2x0px;
+    text-align: center;
+}
+h1{
+    margin: 10px; 
+}
+table{
+    width: 100%;
+}
+table tr td,th{
+    padding: 10px;
+}
+input{
+    width: 200px;
+    height: 25px;
+    padding: 10px;
+}
+input[type="submit"]{
+    height: 40px;
+} 
+div button{
+    padding: 10px;
+    background:none;
+    border: none;
+    font-size:30px;
+}
+div p{
+    width: 100%;
+    padding: 10px;
+    margin-top:10px;
+    background:green;
+    color: #fff;
+}
