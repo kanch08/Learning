@@ -1,0 +1,49 @@
+.container{
+    width: 90%;
+    margin: auto;
+}
+.container h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+}
+
+.container p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    font-size: 15px;
+    margin-top: 0px;
+}
+.container .thumbnail{
+    width: 270px;
+    height: 320px;
+    float: left;
+    margin: 5px;   
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container .thumbnail .brand-info{
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+    top:-70px;
+    left: -10px;
+}
+.container .thumbnail .brand-info img{
+    width: 100%;
+    margin: auto; 
+}
+
+.container .thumbnail .brand-info p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding : 0px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+
+}
