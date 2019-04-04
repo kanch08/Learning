@@ -1,0 +1,11 @@
+.taskcontainer{
+    margin-top:5px;
+}
+.todoTask{
+    display: flex;
+    justify-content: space-between;
+    margin-top:5px;
+    border-bottom: 2px solid #fb602d;
+    border-left:2px solid #fb602d;
+
+}

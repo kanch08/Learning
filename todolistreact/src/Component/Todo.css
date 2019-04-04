@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    margin:0;
+}
+input{
+    height: 30px;
+    width: 400px;
+    border:2px solid rgba(240, 88, 41, 0.73);
+    padding: 15px 15px;
+    margin: 10px;
+}
+button{
+    height: 34px;
+    width: 100px;
+    border:none;
+    background: rgba(240, 88, 41, 0.93);
+    color:white;
+    font-size: 16px;
+}
+button:hover{
+    cursor: pointer;
+}
+.inputContainer{
+    margin-top:50px;
+}
+.login{
+    width: 400px;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+
+.login label{
+    font-size: 14px;
+    padding: 10px;
+}
