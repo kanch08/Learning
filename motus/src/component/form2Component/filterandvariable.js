@@ -10,14 +10,14 @@ class FilterVariable extends Component {
                         <input type="checkbox" value="Insurance Declaration" name="fixedVariable" />
                         <ul>
                             <li>Insurance Declaration</li>
-                            <li>(Required for this product)</li>
+                            <li><p>(Required for this product)</p></li>
                         </ul>
                     </div>
                     <div>
                         <input type="checkbox" value="Vehicle Information" name="vehicleInformation" />
                         <ul>
                             <li>Vehicle Information</li>
-                            <li>(Required for this product)</li>
+                            <li><p>(Required for this product)</p></li>
                         </ul>
                     </div>
                     <div>
@@ -27,16 +27,10 @@ class FilterVariable extends Component {
 
                         </ul>
                     </div>
-                    <h5>How often should we calculate incurred tax?
-                    </h5>
-                    <select name="tax">
-                        <option value="Annually">Annually</option>
-                        <option value="Quaterly">Quaterly</option>
-                        <option value="Monthly">Monthly</option>
-                    </select>
-                    <h5>What month does tax reporting start?</h5>
                 </form>
             </div>
         )
     }
 }
+
+export default FilterVariable;

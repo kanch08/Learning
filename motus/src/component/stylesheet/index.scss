@@ -80,13 +80,31 @@ header{
 }
 
 .fixedVariableRate{
-  max-width: 400px;
   width: 100%;
   margin: auto;
-  input[type="checkbox"]{
-    @extend %checkbox;
+  font-size: 15px;
+  margin-left: 50px;
+  div{
+    display: flex;
+    justify-content: flex-start;
+    input[type="checkbox"]{
+      margin: 0;
+      margin-right: 15px;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+  }
+  ul li{
+    list-style: none;
   }
 
+  p{
+    font-size: 10px;
+    font-style: italic;
+    color: #ccc;
+  }
 }
 footer{
   width: 90%;
@@ -106,4 +124,188 @@ footer{
     background: #999;
   }
 
+}
+.applyProduct{
+  max-width: 400px;
+  margin: auto;
+  .filter{
+    .container input {
+      opacity: 1;
+      cursor: pointer;
+      height: 100px;
+      width: 100px;
+    }
+  }
+  h3{
+    font-size: 26px;
+  }
+  h5{
+    color: #ccc;
+    font-weight: 500;
+  }
+  label{
+    font-size:14px;
+  }
+  p{
+    padding-top: 5px;
+    font-size: 16px;
+  }
+  ul li{
+    p{
+      font-size: 12px;
+    }
+  }
+
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .container inpufixedVariableRatet:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  }
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.annualTax{
+  margin-left: 50px;
+  p{
+    font-size: 13px;
+    color: #666666;
+  }
+  select{
+    width: 200px;
+    padding: 10px;
+    background: none;
+    border: thin solid #666;
+    margin: 5px;
+    font-size: 12px;
+
+  }
+}
+
+.payment{
+  .driver{
+    margin-top: 25px;
+    p{
+      margin-left: 15px;
+    }
+    span{
+      font-size: 13px;
+      font-style: italic;
+      color: #666;
+    }
+    h3{
+      margin: 7px auto;
+      font-size: 16px;
+    }
+  }
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label
+  {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+  }
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: deepskyblue;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
