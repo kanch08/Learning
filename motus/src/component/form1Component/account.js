@@ -9,20 +9,21 @@ class Account extends Component{
     }
     render(){
         const {companyAction} = this.props;
+        const { industry , accountManager , date} = this.props.company;
         return(
             <div className="account">
                 <h2>Account Information</h2>
                 <label>
                     Industry
                 </label>
-                <select name="industry" onChange={(event)=>handleOnChange(event,companyAction)}>
+                <select name="industry" value={industry} onChange={(event)=>handleOnChange(event,companyAction)}>
                     <option value="">Select</option>
                     <option value="ParleG"> ParleG</option>
                     <option value="BMW">BMW</option>
                     <option value="patanjali">Patanjali</option>
                 </select>
                 <h2>Account Manager</h2>
-                <select name="accountManager" onChange={(event)=>handleOnChange(event,companyAction)}>
+                <select name="accountManager" value={accountManager} onChange={(event)=>handleOnChange(event,companyAction)}>
                     <option value="">Select</option>
                     <option value="a1"> ParleG</option>
                     <option value="BMWa2">BMW</option>
@@ -31,7 +32,7 @@ class Account extends Component{
                 <label>
                     Start Date
                 </label>
-                <input type="date" name="date" onChange={(event)=>handleOnChange(event,companyAction)}/>
+                <input type="date" name="date" value={date} onChange={(event)=>handleOnChange(event,companyAction)}/>
                 
             </div>
 
@@ -41,7 +42,7 @@ class Account extends Component{
 }
 const mapStateToProps=(store)=>{
     return {
-        store
+        company:store.form1rootReducers.form1companyReducer
     }
 }
 const mapDispatchToProps = {

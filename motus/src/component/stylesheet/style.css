@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 header .container .menu ul li a {
   font-size: 15px;
 }
@@ -18,10 +26,13 @@ header .container {
 }
 header .container .logo {
   width: 120px;
-  margin-top: 10px;
+  margin-top: 3px;
+}
+header .container .menu {
+  margin-left: 15px;
 }
 header .container .menu ul {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 header .container .menu ul li {
   display: inline-block;
@@ -37,17 +48,37 @@ header .social {
   top: 18px;
 }
 
+.company {
+  margin-top: 80px;
+}
+
+.customer h1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  background: #f2f2f2;
+  height: 70px;
+  padding-top: 20px;
+  text-transform: capitalize;
+}
+
+.progress-bar {
+  width: 600px;
+  margin: auto;
+}
+
 .form {
   max-width: 400px;
   margin: 20px auto;
 }
 .form label {
   display: block;
-  margin: 10px 0;
+  margin: 15px 0;
+  font-size: 16px;
 }
 .form input {
   width: 100%;
-  height: 35px;
+  height: 40px;
   padding: 5px;
 }
 .form select {
@@ -57,12 +88,16 @@ header .social {
 }
 .form input[type=date] {
   width: 150px;
-  padding: 0;
+  padding: 5px;
 }
 
-.account h2 {
+h2 {
   border-bottom: thin solid #999;
   padding-bottom: 10px;
+  margin-top: 15px;
+  color: #666;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .fixedVariableRate {
@@ -74,10 +109,12 @@ header .social {
 .fixedVariableRate div {
   display: flex;
   justify-content: flex-start;
+  margin-top: 20px;
 }
 .fixedVariableRate div input[type=checkbox] {
   margin: 0;
   margin-right: 15px;
+  margin-top: 2px;
 }
 .fixedVariableRate div ul {
   margin: 0;
@@ -86,17 +123,18 @@ header .social {
 .fixedVariableRate ul li {
   list-style: none;
 }
-.fixedVariableRate p {
+.fixedVariableRate ul li p {
   font-size: 10px;
   font-style: italic;
   color: #ccc;
 }
 
 footer {
-  width: 90%;
+  width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
+  margin-top: 100px;
 }
 footer button {
   padding: 10px 20px;
@@ -114,6 +152,7 @@ footer .back {
 .applyProduct {
   max-width: 400px;
   margin: auto;
+  margin-top: 100px;
   /* Hide the browser's default checkbox */
   /* Create a custom checkbox */
   /* On mouse-over, add a grey background color */
@@ -129,7 +168,9 @@ footer .back {
   width: 100px;
 }
 .applyProduct h3 {
-  font-size: 26px;
+  font-size: 24px;
+  margin-top: 20px;
+  color: #666;
 }
 .applyProduct h5 {
   color: #ccc;
@@ -140,7 +181,8 @@ footer .back {
 }
 .applyProduct p {
   padding-top: 5px;
-  font-size: 16px;
+  font-size: 15px;
+  color: #333;
 }
 .applyProduct ul li p {
   font-size: 12px;
@@ -201,17 +243,24 @@ footer .back {
 
 .annualTax {
   margin-left: 50px;
+  margin-top: 15px;
 }
 .annualTax p {
   font-size: 13px;
   color: #666666;
+  margin-bottom: 10px;
+}
+.annualTax p input[type=radio] {
+  margin-right: 5px;
+  margin-top: 10px;
 }
 .annualTax select {
   width: 200px;
   padding: 10px;
   background: none;
   border: thin solid #666;
-  margin: 5px;
+  margin: 0;
+  margin-bottom: 10px;
   font-size: 12px;
 }
 
@@ -220,11 +269,13 @@ footer .back {
 }
 .payment .driver p {
   margin-left: 15px;
+  margin-top: 10px;
 }
 .payment .driver span {
   font-size: 13px;
   font-style: italic;
   color: #666;
+  margin-top: 10px;
 }
 .payment .driver h3 {
   margin: 7px auto;
@@ -278,6 +329,107 @@ footer .back {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+.detailForm {
+  width: 100% !important;
+  border: none !important;
+  position: relative !important;
+  top: 0px !important;
+  padding-bottom: 50px !important;
+}
+.detailForm input {
+  width: 150px;
+  height: 40px;
+  margin: 5px 0;
+}
+.detailForm .progressHeading {
+  position: relative;
+  top: -10px;
+  border: none !important;
+  margin: 0px !important;
+}
+.detailForm input[type=radio] {
+  width: 20px;
+  margin-left: 50px;
+  position: relative;
+  top: 15px;
+}
+.detailForm li:last-child {
+  width: 5px;
+  color: red;
+  font-weight: 600;
+  cursor: pointer;
+}
+.detailForm li button {
+  background: none;
+  color: red;
+  font-weight: 600;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.detailForm li button:hover {
+  opacity: 0.5;
+}
+
+.detail {
+  max-width: 1000px;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  border: thin solid #666;
+  position: relative;
+  top: 70px;
+}
+.detail .progressHeading {
+  width: 100%;
+  height: 50px;
+  margin: 30px auto;
+  border-bottom: thin solid #666;
+}
+.detail ul {
+  width: 90%;
+  margin: auto;
+  padding-left: 20px;
+}
+.detail ul li {
+  display: inline-block;
+  width: 190px;
+}
+.detail .addButtonWrapper {
+  width: 100%;
+  border-top: thin solid #666;
+  border-bottom: thin solid #666;
+}
+.detail .addButtonWrapper .addButton {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #999;
+  font-weight: 600;
+  margin: 10px;
+}
+.detail .addButtonWrapper .addButton button {
+  color: #999;
+  font-size: 1.4em;
+  margin-left: 1px;
+  text-align: center;
+  transform: translateY(-5px);
+  background: none;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background: #666;
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

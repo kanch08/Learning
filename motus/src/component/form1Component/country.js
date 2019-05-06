@@ -7,6 +7,7 @@ class Country extends Component{
 
     render(){
         const {companyAction} = this.props;
+        const { BillingAddress1 , BillingAddress2 , city , PhoneNumber} = this.props.company;
         return(
             <div className="contact">
                 <h2>Country</h2>
@@ -19,13 +20,13 @@ class Country extends Component{
                 </select>
                 <div className="billing">
                     <label>Billing Address Line 1</label>
-                    <input type="text" name="Billing-Address-1"  onChange={(event)=>handleOnChange(event,companyAction)} placeholder="Street Address, PO, Box"/>
+                    <input type="text" name="BillingAddress1" value={BillingAddress1} onChange={(event)=>handleOnChange(event,companyAction)} placeholder="Street Address, PO, Box"/>
                     <label>Billing Address Line 2</label>
-                    <input type="text" name="Billing-Address-2"  onChange={(event)=>handleOnChange(event,companyAction)} placeholder="Building Suite, Floor etc"/>
+                    <input type="text" name="BillingAddress2" value={BillingAddress2}  onChange={(event)=>handleOnChange(event,companyAction)} placeholder="Building Suite, Floor etc"/>
                     <label>City</label>
-                    <input type="text" name="city" name="city"  onChange={(event)=>handleOnChange(event,companyAction)}/>
+                    <input type="text" name="city" name="city" value={city}  onChange={(event)=>handleOnChange(event,companyAction)}/>
                     <label>Phone Number</label>
-                    <input type="text" maxLength="10" name="Phone-Number"  onChange={(event)=>handleOnChange(event,companyAction)}/>
+                    <input type="text" maxLength="10" name="PhoneNumber" value={PhoneNumber} onChange={(event)=>handleOnChange(event,companyAction)}/>
                 </div>
             </div>
         )
@@ -36,7 +37,7 @@ class Country extends Component{
 
 const mapStateToProps = (store) => {
     return {
-        store
+        company:store.form1rootReducers.form1companyReducer
     };
 }
 

@@ -2,6 +2,12 @@ import React, {Component} from 'react';
 import FilterVariable from './filterandvariable';
 import AnnualTax from './annualtax';
 import Payment from './payment';
+import DriverManagement from './driverManagement';
+import FixedPaymentSchedule from './fixedpaymentschedule';
+
+import companyAction from '../form1Component/Action/companyAction';
+import { connect } from 'react-redux';
+
 class ApplyProduct extends Component {
     constructor(){
         super();
@@ -11,6 +17,7 @@ class ApplyProduct extends Component {
             techChecked : false,
         }
     }
+
 
     markCheckbox = (event) => {
         console.log("Event Name############## " ,event.target.name);
@@ -24,7 +31,7 @@ class ApplyProduct extends Component {
                 centChecked : !this.state.centChecked,
             })
         }
-        else if((event.target.name) == "technology"){
+        else if((event.target.name) == "Technology"){
             this.setState({
                 techChecked : !this.state.techChecked,
             })
@@ -35,6 +42,8 @@ class ApplyProduct extends Component {
 
 
     render(){
+        
+
         return(
             <div className="applyProduct">
                 <div>
@@ -43,37 +52,43 @@ class ApplyProduct extends Component {
                         <label className="container">
                             <p>Fixed and Variable Bar</p>
                             <input type="checkbox" onClick={this.markCheckbox} name="fixedandVariableBar" />
-
                             <span className="checkmark"></span>
                         </label>
+
                         {this.state.fixedChecked ?<div> <FilterVariable/> <AnnualTax /></div>: ''}
+
                         <label className="container">
                             <p>Cent Per Mile</p>
-                            <input type="checkbox" onClick={this.markCheckbox} name="centPerMile" />
+                            <input type="checkbox" onClick={this.markCheckbox}  name="centPerMile" />
                             <span className="checkmark"></span>
                         </label>
                         {this.state.centChecked ? <FilterVariable/> : ''}
                         <label className="container">
                             <p>Technology Only</p>
-                            <input type="checkbox" onClick={this.markCheckbox} name="technology" />
+                            <input type="checkbox" onClick={this.markCheckbox} name="Technology" />
 
                             <span className="checkmark"></span>
                         </label>
                         {this.state.techChecked ? <FilterVariable/> : ''}
                     </form>
                 </div>
-
-
-
-                <Payment />
-
-
-                
+                {this.state.fixedChecked ?<Payment/>: ''}
+                {this.state.centChecked ?<DriverManagement/>: ''}
+                {this.state.techChecked ?<FixedPaymentSchedule/>: ''}
             </div>
 
         )
     }
-
 }
 
-export default ApplyProduct;
+const mapStateToProps = (store) => {
+    return{
+        product:store.form1rootReducers.form1companyReducer
+    }
+}
+
+const mapDispatchToProps = {
+    companyAction
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(ApplyProduct);
