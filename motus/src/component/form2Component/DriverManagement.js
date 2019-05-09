@@ -9,7 +9,13 @@ class DriverManagement extends Component{
                     <div className="driver">
                         <h3>Driver Management</h3>
                         <p>
-                            <input type="radio" id="drive1" name="driver-group" value="Self-Service"  required="required"/>
+                            <input
+                                type="radio"
+                                id="drive1"
+                                name="driver-group"
+                                value="Self-Service"
+                                required="required"
+                            />
                             <label htmlFor="drive1">Self-Service</label>
                         </p>
                         <p>

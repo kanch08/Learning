@@ -5,6 +5,20 @@ $anchorColor : #333;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color:#333;
+}
+
+label{
+  color: #333;
+  font-size:14px;
+}
+input[type="text"],input[type="date"],select{
+  border-radius: 3px;
+  border: thin solid #ccc;
+  padding:5px;
+}
+select{
+  width: 100%;
 }
 %font {
   font-size: 15px;
@@ -17,6 +31,7 @@ $anchorColor : #333;
   background: none;
   color: blue;
 }
+
 header{
   width: 100%;
   height: 80px;
@@ -31,7 +46,7 @@ header{
     display: flex;
     .logo{
       width: 120px;
-      margin-top: 3px;
+      margin-top: 0;
     }
     .menu{
       margin-left:15px;
@@ -39,7 +54,7 @@ header{
         margin-top: 5px;
         li{
           display: inline-block;
-          margin: 5px;
+          margin: 0 15px;
           a{
             @extend %font;
             text-decoration: none;
@@ -48,41 +63,77 @@ header{
         }
       }//ul
     }//menu
-
   }
   .social{
     position:relative;
     right: 50px;
     top: 18px;
+    img{
+      margin:0 5px;
+    }
   }
 }
+///////////////////////header///////////////////////////////
+
 .company{
-  margin-top: 80px;
+  margin-top: 40px;
+  label{
+    margin: 60px auto;
+  }
+  input{
+    margin-top: 10px;
+  }
 }
 .customer{
-    h1{
-      text-align: center;
-      font-size: 22px;
-      font-weight: 600;
-      background: #f2f2f2;
-      height: 70px;
-      padding-top: 20px;
-      text-transform: capitalize;
-    }
+  h1{
+    text-align: center;
+    font-size: 22px;
+    color: #666;
+    font-weight: 600;
+    background: #f2f2f2;
+    height: 90px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
 }
 .progress-bar{
   width: 600px;
   margin: auto;
 
 }
-
+.form1{
+  .formRendering{
+    width: 640px;
+    margin: auto;
+    .demoCompany{
+      width: 100%;
+      padding: 10px 0;
+      margin: auto;
+      margin-top: 60px;
+      background: #f2f2f2;
+      display: flex;
+    }
+    input[type="checkbox"] {
+      margin-right: 10px;
+      width: 15px;
+    }
+    .demo{
+      font-size:16px;
+      position: relative;
+      left: 120px;
+    }
+  }
+}
 .form{
   max-width: 400px;
   margin: 20px auto;
   label{
     display: block;
-    margin: 15px 0;
-    font-size: 16px;
+    margin: 40px 0;
+    font-size: 14px;
+    &:first-of-type {
+      margin-top: 20px;
+    }
   }
   input{
     width: 100%;
@@ -90,42 +141,59 @@ header{
     padding: 5px;
   }
   select{
-    width:150px;
+    width:100%;
     background: none;
     padding: 10px;
   }
   input[type="date"]{
     width: 150px;
     padding: 5px;
+    text-transform: uppercase;
   }
 }
 h2{
   border-bottom:thin solid #999;
   padding-bottom: 10px;
-  margin-top: 15px;
+  margin:10px 0;
   color: #666;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.account{
+  margin-top: 70px;
+
+  h2{
+    font-size: 16px;
+  }
+  select{
+    margin: 10px 0px;
+  }
+  input[type="date"]{
+    margin-top: 10px;
+  }
+}
+
+.country{
+  label{
+    margin-top: 20px;
+  }
 }
 
 .fixedVariableRate{
   width: 100%;
   margin: auto;
   font-size: 15px;
-  margin-left: 50px;
+  h5{
+    margin-left: 80px;
+    margin-top: 20px;
+  }
   div{
     display: flex;
     justify-content: flex-start;
-    margin-top: 20px;
-    input[type="checkbox"]{
-      margin: 0;
-      margin-right: 15px;
-      margin-top: 2px;
-    }
-    ul{
-      margin: 0;
-      padding: 0;
-    }
+    margin-top: 0px;
+    margin-left: 50px;
+
   }
   ul li{
     list-style: none;
@@ -144,24 +212,31 @@ footer{
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
+
   button{
-    padding:10px 20px;
+    padding:15px 20px;
     border: none;
+    font-weight: 600;
     color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     cursor: pointer;
   }
   .next{
-    background: deepskyblue;
+    background: #34aeef;
+    box-shadow: 1px 1px 4px 0px skyblue;
   }
   .back{
-    background: #999;
+    background: #b1b1b1;
+    box-shadow: 1px 1px 4px 0px #666;
   }
 
 }
 .applyProduct{
   max-width: 400px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 90px;
   .filter{
     .container input {
       opacity: 1;
@@ -171,9 +246,10 @@ footer{
     }
   }
   h3{
-    font-size: 24px;
+    font-size: 16px;
     margin-top: 20px;
-    color: #666;
+    color: #333;
+    font-weight: 500;
   }
   h5{
     color: #ccc;
@@ -181,6 +257,7 @@ footer{
   }
   label{
     font-size:14px;
+    margin-left: 30px;
   }
   p{
     padding-top: 5px;
@@ -207,14 +284,16 @@ footer{
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: thin solid #34aeef;
+    border-radius: 3px;
   }
 
   /* On mouse-over, add a grey background color */
   .container:hover input ~ .checkmark {
-    background-color: #ccc;
+    background:none;
   }
 
   /* When the checkbox is checked, add a blue background */
@@ -236,17 +315,17 @@ footer{
 
   /* Style the checkmark/indicator */
   .container .checkmark:after {
-    left: 9px;
-    top: 5px;
+    left: 5px;
+    top: 1px;
     width: 5px;
     height: 10px;
-    border: solid white;
+    border: solid #34aeef;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  }
+}
 
 .container {
   display: block;
@@ -263,47 +342,33 @@ footer{
 
 
 .annualTax{
-  margin-left: 50px;
+  margin-left: 80px;
   margin-top: 15px;
   p{
     font-size: 13px;
     color: #666666;
     margin-bottom:10px;
-    input[type="radio"]{
-      margin-right:5px;
-      margin-top: 10px;
-    }
+  }
+  h5{
+    margin-top: 20px;
   }
   select{
     width: 200px;
     padding: 10px;
-    background: none;
-    border: thin solid #666;
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 12px;
-
+    border: thin solid #b1b1b1;
+    font-size: 15px;
+  }
+  .payment{
+    p{
+      margin-left: -30px;
+      margin-top:10px;
+    }
   }
 }
 
 .payment{
-  .driver{
-    margin-top: 25px;
-    p{
-      margin-left: 15px;
-      margin-top: 10px;
-    }
-    span{
-      font-size: 13px;
-      font-style: italic;
-      color: #666;
-      margin-top: 10px;
-    }
-    h3{
-      margin: 7px auto;
-      font-size: 16px;
-    }
-  }
+  /////////////////////////////////////////////////
+
   [type="radio"]:checked,
   [type="radio"]:not(:checked) {
     position: absolute;
@@ -354,14 +419,39 @@ footer{
     -webkit-transform: scale(1);
     transform: scale(1);
   }
+
+
+
+
+
+  ///////////////////Custom Radio Button CSS ///////////////////////
+  .driver{
+    margin-top: 15px;
+    p{
+      margin-left: -30px;
+      margin-top: 10px;
+    }
+    span{
+      font-size: 13px;
+      font-style: italic;
+      color: #666;
+      margin-top: 10px;
+    }
+    h3{
+      margin: 7px auto;
+      font-size: 16px;
+    }
+  }
+
 }
 .detailForm{
   width:100%!important;
   border: none!important;
   position: relative!important;
   top: 0px!important;
-
+  box-shadow: none !important;
   padding-bottom: 50px!important;
+
   input{
     width: 150px;
     height: 40px;
@@ -381,39 +471,41 @@ footer{
   }
   li{
     &:last-child{
-      width: 5px;
-      color: red;
-      font-weight: 600;
+      position: relative;
+      left: -20px;
       cursor: pointer;
     }
-    button{
-      background: none;
-      color: red;
-      font-weight: 600;
-      border: none;
-      font-size: 20px;
+    img{
+      position: relative;
+      top: 5px;
+      left: -15px;
       cursor: pointer;
+      opacity: 0.7;
       &:hover{
-        opacity: 0.5;
+        opacity: 1;
       }
     }
   }
 }
 
+
 .detail{
   max-width: 1000px;
   width: 90%;
   height: auto;
-  margin: auto;
+  margin: 0   auto;
   overflow: hidden;
-  border:thin solid #666;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   position: relative;
   top: 70px;
+  box-shadow: 1px 2px 8px #999;
   .progressHeading{
     width: 100%;
     height: 50px;
     margin: 30px auto;
-    border-bottom: thin solid #666;
+    border-bottom: 1px solid #999;
   }
   ul{
     width: 90%;
@@ -422,32 +514,35 @@ footer{
     li{
       display: inline-block;
       width: 190px;
+      font-size: 15px;
+      color: #333;
     }
   }
   .addButtonWrapper{
     width: 100%;
-    border-top: thin solid #666;
-    border-bottom: thin solid #666;
+    border-top: 1px solid #999;
     .addButton{
-      width: 20px;
-      height: 20px;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
-      border: 2px solid #999;
-      font-weight: 600;
-      margin: 10px;
-      button{
-        color: #999;
-        font-size: 1.4em;
-        margin-left: 1px;
-        text-align:center;
-        transform: translateY(-5px);
-        background: none;
-        border: none;
-        font-weight: 700;
+      padding: 10px;
+      img{
         cursor: pointer;
+        opacity: 0.7;
+        &:hover{
+          opacity: 1;
+          transition:all linear 0.2s;
+        }
       }
+    }
+    button{
+      color: #999;
+      font-size: 1.4em;
+      margin-left: 3px;
+      margin-top: 2px;
+      text-align:center;
+      transform: translateY(-5px);
+      background: none;
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
     }
   }
 }
@@ -455,7 +550,56 @@ footer{
 
 .footer{
   width: 100%;
-  height: 100px;
-  background: #666;
+  height: 80px;
+  background: #707070;
   margin-top: 50px;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+.ProgressBarStyle {
+  position:relative;
+  .form-heading{
+    padding: 0;
+    width: 525px;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 25px auto;
+    font-size: 14px;
+    color:dimgrey;
+    font-weight: 500;
+  }
+  .defaultBar {
+    display: flex;
+    height: 5px;
+    justify-content: space-evenly;
+    width: 630px;
+    border: 3px solid #d8d7d7;
+    margin: 0 auto;
+
+    .child {
+      align-items: start;
+      margin-top: -15px;
+      z-index: 3;
+    }
+    .car{
+      margin-top:-12px;
+    }
+    .milestone2,.milestone3{
+      width: 25px;
+      height: 25px;
+      background-color: #b3b3b3;
+      color:white;
+      padding: 3px 7px;
+      border-radius: 50%;
+    }
+  }
+  .blueProgress{
+    height: 6px;
+    background: dodgerblue;
+    position: absolute;
+    left: 26%;
+    top: 0px;
+  }
 }

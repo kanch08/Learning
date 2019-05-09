@@ -1,16 +1,15 @@
 import React ,{ Component } from 'react';
-import Header from './component/header';
-import FormRender from './component/formRender';
-import ApplyProduct from './component/form2Component/applyProduct';
-import Footer from './component/footer';
+import Header from './component/Header';
+import FormRender from './component/FormRender';
+import Footer from './component/Footer';
 
 class App extends Component {
-   
+
 render(){
     return (
         <div className="App">
             <Header />
-         
+
             <FormRender />
             <Footer/>
         </div>

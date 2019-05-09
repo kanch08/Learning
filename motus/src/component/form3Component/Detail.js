@@ -1,9 +1,18 @@
 import React , { Component } from 'react';
-import DetailForm from './detailForm';
+import DetailForm from './DetailForm';
+import add from '../assets/add.png';
 
 class Detail extends Component {
-    constructor(){
-        super();
+    getDrivedStateFromProps(prevProps,nextState) {
+        //get no of forms from redux
+        let noOfForms=3;
+        for(let i=0;i<noOfForms;i++) {
+            nextState.componentRender.push(DetailForm)
+        }
+    }
+
+    constructor(props){
+        super(props);
         this.state={
             formNumber:0,
             componentRender:[<DetailForm/>]
@@ -17,23 +26,19 @@ class Detail extends Component {
                 formNumber: formNumber + 1,
                 componentRender
             })
-            console.log("componentRender",componentRender);
         }
     }
     handleDelete = (event) => {
-        let componentArray = [...this.state.componentRender];
         let index = this.state.componentRender.indexOf(<DetailForm/>,1);
         this.state.componentRender.splice(index);
         this.setState({
             formNumber: this.state.formNumber-1,
             componentRender:this.state.componentRender
         })
-        console.log("Component Render Updated Index",this.state.componentRender.length)
     }
 
 
     render(){
-        console.log('this >>> ' , this.state.componentRender);
         return(
             <div className="detail">
                 <ul className="progressHeading">
@@ -43,21 +48,19 @@ class Detail extends Component {
                     <li>Start Date</li>
                     <li>Finance Contact</li>
                 </ul>
-
+                <form>
                 {
                     this.state.componentRender.map(item => {
                         return item;
                     })
                 }
+                </form>
 
                 {
                     this.state.formNumber < 2 ?
                         <div className="addButtonWrapper">
                             <div className="addButton">
-                                <button
-                                    onClick={this.handleClick}
-                                >+
-                                </button>
+                                <img src={add} alt="add" onClick={this.handleClick} width="20px"/>
                             </div>
                         </div>
                         :

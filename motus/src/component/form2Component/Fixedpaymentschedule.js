@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 
-class FixedPaymentSchedule extends Component{
+class Fixedpaymentschedule extends Component{
     render(){
         return(
             <div className="payment applyProduct">
@@ -24,4 +24,4 @@ class FixedPaymentSchedule extends Component{
     }
 }
 
-export default FixedPaymentSchedule;
+export default Fixedpaymentschedule;

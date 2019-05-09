@@ -1,4 +1,4 @@
-export const productAction = (data) => {
+export const companyAction = (data) => {
     return{
         type : "onChange",
         data
