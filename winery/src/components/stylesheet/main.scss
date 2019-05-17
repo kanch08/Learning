@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #fff;
+}
+
+
+.App{
+  position: relative;
+  .cart{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+  }
+  .cartcontainer{
+    position:relative;
+    top: 30px;
+  }
+}

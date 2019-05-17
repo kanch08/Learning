@@ -1,0 +1,49 @@
+table{
+  width: 600px;
+  margin: auto;
+  font-family: 'Dosis', sans-serif;
+  thead{
+    background: red;
+    color: #fff;
+    th{
+      text-transform: uppercase;
+    }
+  }
+  tr{
+    td,th{
+      width: 150px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+    td{
+      padding: 15px;
+      border: thin solid #f2f2f2;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.tableButton{
+  width: 510px;
+  margin: auto;
+  margin-top: 40px;
+  button{
+    font-family: 'Dosis', sans-serif;
+    margin: 10px;
+    background: red;
+    border: none;
+    padding:7px 10px;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.8;
+    text-transform: capitalize;
+    border-radius:4px;
+    cursor: pointer;
+    font-weight: 600;
+    &:hover{
+      opacity: 1;
+      transition: all linear 0.2s;
+    }
+  }
+}
